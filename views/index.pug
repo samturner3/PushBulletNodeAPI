@@ -1,0 +1,17 @@
+extends ./templates/layout
+
+block content
+
+  h1= title
+  p Welcome to #{title}
+
+    h2 Send Push Bullet Message
+
+    form(method='POST' action='/send')
+             div.form-group
+               label(for='title') Title:
+               input#name.form-control(type='text', name='title')
+             div.form-group
+               label(for='body') Body:
+               input#email.form-control(type='text', name='body')
+             button.btn.btn-primary(type='submit') Send
