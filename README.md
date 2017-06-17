@@ -6,10 +6,10 @@ Get your API key at pushbullet.com
 
 ## Usage
 
-``
+```
 npm install
 
 node index
-``
+```
 
 Open browser to localhost:3000.
